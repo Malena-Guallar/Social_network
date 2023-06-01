@@ -12,8 +12,5 @@ try
         die('erreur : ' . $e->getMessage())
     }
 
-$insertUser = 'INSERT INTO users(ID, Pseudo, Email, Password) VALUES (NULL, $pseudo, $email, $password)'
-
-
 ?>
 
