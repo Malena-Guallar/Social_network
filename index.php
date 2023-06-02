@@ -15,18 +15,18 @@
 <?php
     if (isset($_POST["username"]) && isset($_POST["email"]) && isset($_POST["password"]))
     {
-        $username = $_POST["username"]
-        $email = $_POST["email"]
-        $password = $_POST["password"]
+        $username = $_POST["username"];
+        $email = $_POST["email"];
+        $password = $_POST["password"];
 
-        $insertUser = 'INSERT INTO users(ID, Pseudo, Email, Password) VALUES (NULL, "'" $username"'", "'" $email"'", "'" $password"'")'
-        $information = $bdd->query($insertUser)
+        $insertUser = 'INSERT INTO users (id, pseudo, email, password) VALUES (NULL, "'.$username.'", "'.$email.'", "'.$password.'")';
+        $information = $bdd->query($insertUser);
 
         if (!$information){
-            echo "Your account is false"
+            echo "Your account is false";
         }
         else
-            echo "Your account is created"
+            echo "Your account is created";
     }
 ?>
 <div>
@@ -36,7 +36,7 @@
         <label>Email</label>
         <input type="text" name = "email">
         <label>Password</label>
-        <input type="text" name = "password">
+        <input type="password" name = "password">
     
         <input type="submit">
     </form>
