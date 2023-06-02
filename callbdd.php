@@ -1,16 +1,16 @@
 <?php
 try
 {
-    $bdd= new PDO("localhost:8889",
-    "root",
-    "root",
-    "afterlife",
-    [PDO:: ATTR_ERRMODE => PDO:: ERRORMODE_EXCEPTION],);
-}
+    $bdd= new PDO(    
+    'mysql:host=localhost;dbname=afterlife;charset=utf8',
+    'root',
+    'root',
+    [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION],
+); }
     catch (Exception $e)
     {
-        die('erreur : ' . $e->getMessage())
-    }
+        die('erreur : ' . $e->getMessage());
+    } ;
 
 ?>
 

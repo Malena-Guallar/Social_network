@@ -10,23 +10,26 @@
 <header>
 </header>
 <?php
-    include_once("callbdd.php")
+    include_once("callbdd.php");
 ?>
 <?php
     if (isset($_POST["username"]) && isset($_POST["email"]) && isset($_POST["password"]))
     {
-        $username = $_POST["username"]
-        $email = $_POST["email"]
-        $password = $_POST["password"]
+        $username = $_POST["username"];
+        $email = $_POST["email"];
+        $password = $_POST["password"];
 
-        $insertUser = 'INSERT INTO users(ID, Pseudo, Email, Password) VALUES (NULL, "'" $username"'", "'" $email"'", "'" $password"'")'
-        $information = $bdd->query($insertUser)
+        $insertUser = 'INSERT INTO users(id, pseudo, email, password) VALUES (NULL, "'.$username.'" , "'.$email.'" , "'.$password.'")';
+
+        $information = $bdd->query($insertUser);
 
         if (!$information){
-            echo "Your account is false"
+            echo "Your account is false";
         }
-        else
-            echo "Your account is created"
+        else {
+            echo "Your account is created";
+
+        }
     }
 ?>
 <div>
