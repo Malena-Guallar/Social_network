@@ -27,7 +27,8 @@
             echo "Your account is false";
         }
         else {
-            echo "Your account is created";
+            echo "Your account is created, ";
+            ?> <a href="login.php">log here</a><?php 
 
         }
     }
@@ -39,9 +40,9 @@
         <label>Email</label>
         <input type="text" name = "email">
         <label>Password</label>
-        <input type="text" name = "password">
+        <input type="password" name = "password">
     
-        <input type="submit">
+        <input type="submit" value="Créer un compte">
     </form>
 </div>
 <footer>
