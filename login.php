@@ -9,10 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afterlife</title>
 </head>
+<?php include('video.php') ?>
 <body>
-    <video id="bg_video" autoplay loop muted>
-    <source src="./assets/clouds.mp4" type="video/mp4">
-    </video>
 <header>
 </header>
 <?php
