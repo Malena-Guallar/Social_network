@@ -24,8 +24,8 @@
 
         foreach ($users as $user){
             if (
-                $user['email'] == $_POST['email'] &&
-                $user['password'] == $_POST['password']
+                $user['email'] == $email &&
+                $user['password'] == $password
             ) {
                 echo "c'est bon" ;
 
