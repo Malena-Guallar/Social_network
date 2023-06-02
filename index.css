@@ -1,4 +1,4 @@
-/* bg_video {
+#bg_video {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -8,10 +8,4 @@
     top: 0;
     bottom: 0;
     z-index: -1;
-} */
-
-/* A insérer dans le html :
-    <video id="bg_video" autoplay loop muted>
-    <source src="./assets/clouds.mp4" type="video.mp4">
-    </video>
-*/
+} 
