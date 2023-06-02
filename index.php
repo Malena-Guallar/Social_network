@@ -37,16 +37,18 @@
         }
     }
 ?>
-<div>
-    <form action="" method="post">
+<div class="subscription_form">
+    <form class="form" action="" method="post">
         <label>Username</label>
         <input type="text" name= "username">
+        <br>
         <label>Email</label>
         <input type="text" name = "email">
+        <br>
         <label>Password</label>
         <input type="password" name = "password">
-    
-        <input type="submit" value="Créer un compte">
+        <br>
+        <input class="bouton" type="submit" value="Créer un compte">
     </form>
 </div>
 <footer>

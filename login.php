@@ -45,10 +45,6 @@
 
 
 
-
-
-
-
 <form  method="post">
     <label>email</label>
     <input type='email' name='email'></input>
