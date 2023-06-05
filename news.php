@@ -40,15 +40,16 @@
             ?>
                 <div class="post_container">
                     <div id="pseudo">
-                        <p><?php echo $post['pseudo']?></p>
+                        <p>Posté par <?php echo $post['pseudo']?></p> <br/>
+                        <p><?php echo $post['created']?></p>
                     </div>
-                    <div id="time">
-                        <p>
-                            <time><?php echo $post['created']?></time>
-                         </p>
-                    </div>
-                    <div id="content">
-                        <p><?php echo $post['content']?></p>
+                    <div id="post">
+                        <div id="post_title">
+                            <p><?php echo $post['title']?></p>
+                        </div>
+                        <div id="post_content">
+                            <p><?php echo nl2br($post['content'])?></p>
+                        </div>
                     </div>
                     
                     
