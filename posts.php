@@ -10,6 +10,9 @@
 <style><?php
     include("posts.css")
 ?></style>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
