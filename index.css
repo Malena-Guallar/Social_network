@@ -76,36 +76,44 @@ body {
     font-family: Poppins;
 }
 
+/* Page news: */
+
 .post_container {
     background: rgba(255, 255, 255, 0.7);
-    border: solid 1px black;
     border-radius: 5px;
-    margin: auto;
-    display: flex;
+    margin: 10px auto;
     width: 55%;
-    
-    /* justify-content: center; */
-
+    height: auto;
+    display: flex;
+    flex-direction: column;
 }
-
-
-#content {
-
-    
-}
-
 
 #pseudo  {
-    /* justify-content: end; */
-    /* text-align: end; */
-    /* float: right; */
-    /* flex-direction: row-reverse; */
-    justify-content: flex-start;
-    background: green;
+    justify-content: space-between;
+    margin-right: 7px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: small;
+    margin-right: 20px;
+    color: rgb(125, 125, 125);
 }
 
-#time {
-    justify-content: flex-end; 
-    background: blue;
+#post {
+    display: flex;
+    flex-direction: column;
+    margin-right: 7px;
 }
 
+#post_title {
+    font-weight: 400;
+    color: rgb(60, 60, 60);
+}
+
+#post_content {
+    background: rgba(246, 243, 243, 0.4);
+    color: rgb(80, 80, 80);
+    font-weight: 300;
+    margin: 0 10px 10px 0;
+    border-radius: 3px;
+    padding: 5px;
+}
