@@ -45,6 +45,10 @@ body {
     justify-content: center;
 } */
 
+#message_form{
+
+}
+
 .form {
     /* display: flex; */
     position: relative;
@@ -71,3 +75,37 @@ body {
     border-radius: 3px;
     font-family: Poppins;
 }
+
+.post_container {
+    background: rgba(255, 255, 255, 0.7);
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    width: 55%;
+    
+    /* justify-content: center; */
+
+}
+
+
+#content {
+
+    
+}
+
+
+#pseudo  {
+    /* justify-content: end; */
+    /* text-align: end; */
+    /* float: right; */
+    /* flex-direction: row-reverse; */
+    justify-content: flex-start;
+    background: green;
+}
+
+#time {
+    justify-content: flex-end; 
+    background: blue;
+}
+

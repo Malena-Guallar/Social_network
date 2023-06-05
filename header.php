@@ -13,7 +13,7 @@
     <div>
         <ul>
             <li><a href="login.php">Login</a></li>
-            <li><a href="signUp.php">Sign Up</a></li>
+            <li><a href="index.php">Sign Up</a></li>
         </ul>
     </div>
 </nav>

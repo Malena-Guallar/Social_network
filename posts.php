@@ -21,9 +21,9 @@
 <?php include('video.php') ?>
 <body>
 <header>
-<?php
-    include_once("header.php");
-?>
+    <?php
+        include_once("header.php");
+    ?>
 </header>
 
 
@@ -63,12 +63,15 @@
 
 <div id="message_form">
     <form action="" method="post" class="post_form">
-        <label>Titre</label>
-        <input type="text" name="title"></input>
-        <label>Message</label>
-        <textarea type ="text" name="message"></textarea>
-
-        <input type="submit" value="Publier"></input>
+        <div>
+            <label>Titre</label>
+            <input type="text" name="title"></input>
+        </div>
+        <div>
+            <label>Message</label>
+            <textarea type ="text" name="message"></textarea>
+            <input type="submit" value="Publier"></input>
+        </div>
     </form>
 </div>
 
