@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+
+body {
+    font-family: Poppins;
+}
+
+#header_nav {
+    display: 3;
+    justify-content: space-between;
+}
+
+#header_nav, div, ul{
+    display: flex;
+    list-style-type: none;
+}
+
+#header_nav, div, ul, li{
+    padding-left: 10px;
+}
+
+#bg_video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.post_container {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 55%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#pseudo  {
+    justify-content: space-between;
+    margin-right: 7px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: small;
+    margin-right: 20px;
+    color: rgb(125, 125, 125);
+}
+
+#post {
+    display: flex;
+    flex-direction: column;
+    margin-right: 7px;
+}
+
+#post_title {
+    font-weight: 400;
+    color: rgb(60, 60, 60);
+}
+
+#post_content {
+    background: rgba(246, 243, 243, 0.4);
+    color: rgb(80, 80, 80);
+    font-weight: 300;
+    margin: 0 10px 10px 0;
+    border-radius: 3px;
+    padding: 5px;
+}
