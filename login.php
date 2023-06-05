@@ -48,12 +48,12 @@
 
 ?>
 
-
-
-<form  method="post">
-    <label>email</label>
-    <input type='email' name='email'></input>
-    <label>password</label>
-    <input type="password" name="password"></input>
-    <input type="submit" value="Se connecter"></input>
-</form>
+<div class="subscription_form">
+    <form class="form" method="post">
+        <label>Email</label>
+        <input type='email' name='email'></input>
+        <label>Password</label>
+        <input type="password" name="password"></input>
+        <input type="submit" value="Se connecter"></input>
+    </form>
+</div>
