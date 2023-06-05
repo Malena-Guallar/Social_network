@@ -54,17 +54,12 @@ body {
     border-radius: 7px;
 }
 
-/* .subscription_form > label {
-    position: relative;
-    justify-content: center;
-} */
 
 #message_form{
 
 }
 
 .form {
-    /* display: flex; */
     position: relative;
     align-content: center;
     justify-content: center;
@@ -98,28 +93,6 @@ body {
     display: flex;
     width: 55%;
     
-    /* justify-content: center; */
 
-}
-
-
-#content {
-
-    
-}
-
-
-#pseudo  {
-    /* justify-content: end; */
-    /* text-align: end; */
-    /* float: right; */
-    /* flex-direction: row-reverse; */
-    justify-content: flex-start;
-    background: green;
-}
-
-#time {
-    justify-content: flex-end; 
-    background: blue;
 }
 
