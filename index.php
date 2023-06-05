@@ -12,6 +12,9 @@
 <?php include('video.php') ?>
 <body>
 <header>
+<?php
+    include_once("header.php");
+?>
 </header>
 <?php
     include_once("callbdd.php");

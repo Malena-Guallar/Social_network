@@ -1,6 +1,10 @@
 <style><?php
     include("index.css");
 ?></style>
+<?php 
+    session_start() ;
+    $logged_user = $_SESSION['logged_user'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +16,7 @@
 <?php include('video.php') ?>
 <body>
 <header>
+    <?php include_once('header.php') ?>
 </header>
 <?php
     include_once("callbdd.php");
@@ -33,7 +38,7 @@
             ) {
                 echo "c'est bon" ;
 
-                $_SESSION['logged_user'] = $user['email'] ;
+                $_SESSION['logged_user'] = $user['id'] ;
             } else {
                 $errorMessage = sprintf('mauvaises infos');
             }
