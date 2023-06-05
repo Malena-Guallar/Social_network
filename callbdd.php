@@ -2,7 +2,7 @@
 try
 {
     $bdd= new PDO(    
-    'mysql:host=localhost;dbname=afterlife;charset=utf8',
+    'mysql:host=localhost:8889;dbname=afterlife;charset=utf8',
     'root',
     'root',
     [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION],
