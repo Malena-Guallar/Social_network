@@ -30,7 +30,7 @@
 
     if ($logged_user){
         
-        $searchPost = $bdd->prepare('SELECT posts.title, posts.user_id, posts.content, posts.created, users.pseudo FROM posts JOIN users ON users.id = posts.user_id') ;
+        $searchPost = $bdd->prepare('SELECT posts.title, posts.user_id, posts.content, posts.created, users.pseudo FROM posts JOIN users ON users.id = posts.user_id ORDER BY posts.created DESC') ;
         $searchPost->execute();
         $posts = $searchPost->fetchAll();
 
@@ -39,7 +39,8 @@
             ?>
                 <div class="post_container">
                     <div id="pseudo">
-                        <p>Posté par <?php echo $post['pseudo']?></p> <br/>
+                        <p>Posté par <?php echo $post['pseudo']?></p>
+                        <br/>
                         <p><?php echo $post['created']?></p>
                     </div>
                     <div id="post">
@@ -47,7 +48,7 @@
                             <p><?php echo $post['title']?></p>
                         </div>
                         <div id="post_content">
-                            <p><?php echo nl2br($post['content'])?></p>
+                            <p><?php echo nl2br($post['content']);?></p>
                         </div>
                     </div>
                     
