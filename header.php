@@ -1,3 +1,4 @@
+
 <?php 
     include("callbdd.php")
 ?>
@@ -6,15 +7,11 @@
     include("styleheader.css");
 ?></style>
 
-<p class="app_connect">Connecté en tant que <?php echo $logged_username ?></p>
 
 <div class="app_name">
     <p class="app_infos">a project by JJ, Malena & Maylis</p>
         <h1 class="name">AFTERLIFE</h1>
 </div>
-
-
-
 
 <nav id = "header_nav">
     <div>
@@ -26,8 +23,24 @@
         <h1>AFTERLIFE</h1>
     </div> -->
     <div>
-        <a href="login.php">Login</a>
-    </li><a href="index.php">Sign Up</a>
-    </li><a href="logout.php">Logout</a>
+        <a href="login.php">login</a>
+    </li><a href="index.php">sign Up</a>
+    </li><a href="logout.php">logout</a>
     </div>
 </nav>
+
+<?php
+ 
+    if ($logged_user && $logged_username) {
+        ?> 
+        
+        <div class="user_name">
+        <p class="app_connect">Connecté.e en tant que <?php echo $logged_username ?></p>
+        </div>
+        
+        <?php
+
+    }
+
+?>
+   

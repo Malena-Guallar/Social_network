@@ -4,8 +4,8 @@
 
 <?php 
     session_start() ;
-    $logged_user = $_SESSION['logged_user'];
-    $logged_username = $_SESSION['logged_username'];
+    $logged_user = $_SESSION['logged_user'] ?? null ;
+    $logged_username = $_SESSION['logged_username'] ?? null;
 ?>
 
 <style><?php

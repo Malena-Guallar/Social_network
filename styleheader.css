@@ -12,31 +12,37 @@ body {
     align-items: center;
     margin-bottom: -90px;
     margin-top : 20px;
-    text-shadow: 2px 2px 4px rgba(1, 87, 109, 1);
+
 }
 
 .name {
     font-family:Staatliches;
     font-style:normal;
     font-size: 500%;
-    color: rgba(115, 171, 229, 0.7)
+    color: rgba(115, 171, 229, 0.7);
+    text-shadow:  5px 5px #558ABB;
+
 
 }
 
 .app_infos {
     font-family: Poppins;
-    font-weight: bold;
+    font-weight: 400;
     color: rgba(59, 157, 255);
     margin-bottom : -40px;
+    text-shadow:  0.05em 0.05em #558ABB;
+
 }
 
 .app_connect {
     font-family: Poppins;
-    font-weight: bold;
-    font-size: 25px;
+    font-weight: 300;
+    font-size: 15px;
     color: rgba(59, 157, 255);
-    margin-bottom : -40px;
-    -webkit-text-stroke: 0.75px #ffffff;
+    margin-bottom : 80px;
+    /* -webkit-text-stroke: 0.75px #ffffff; */
+    text-shadow:  0.05em 0.05em #558ABB;
+
 }
 
 
@@ -84,3 +90,7 @@ body {
     z-index: -1;
 } 
 
+.user_name {
+    display: flex;
+    justify-content: center;
+}

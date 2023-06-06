@@ -4,8 +4,9 @@
 
 <?php 
     session_start() ;
-    $logged_user = $_SESSION['logged_user'];
-    $logged_username = $_SESSION['logged_username'];
+
+    $logged_user = $_SESSION['logged_user'] ?? null ;
+    $logged_username = $_SESSION['logged_username'] ?? null;
 ?>
 
 
@@ -25,12 +26,10 @@
         include_once("header.php");
     ?>
 </header>
-
-
-<?php
-
-    if ($logged_user){
         
+        <?php
+    if ($logged_user && $logged_username) {
+    
         $searchPost = $bdd->prepare('SELECT posts.title, posts.user_id, posts.content, posts.created, users.pseudo FROM posts JOIN users ON users.id = posts.user_id ORDER BY posts.created DESC') ;
         $searchPost->execute();
         $posts = $searchPost->fetchAll();
@@ -61,17 +60,19 @@
             <?php
         }
         ?>
+         <?php
+
+    } else if (!$logged_user){
+        ?>
+        <p class="connect">Connectez-vous pour voir les messages</p>    
+        <p class="connect"><a href="login.php">Login</a></p>
+
         <?php
 
-
-
-    } else {
-    
-        ?> <p class="connect">Connectez-vous pour voir les messages</p>
-        <p class="connect"><a href="login.php">Login</a></p><?php
-    
-        ?> <?php
 
     }
 
 ?>
+
+
+        
