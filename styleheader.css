@@ -43,37 +43,6 @@ body {
 
 }
 
-<<<<<<< HEAD
-=======
-.app_name {
-    font-family:Staatliches;
-    font-style:normal;
-    font-size: 300%;
-    color: rgba(115, 171, 229, 0.7);
-    text-shadow: 0.1em 0.1em rgb(3, 39, 92);
-}
-
-.app_infos {
-    display: flex;
-    position: relative;
-    left: 575px;
-    top: 75px; 
-    font-family: Poppins;
-    font-weight: 200;
-    color: rgba(59, 157, 255);
-    text-shadow: 0.05em 0.05em rgb(3, 66, 161);
-}
-
-.app_connect {
-    text-align: right;
-    top: 75px;
-    font-size: medium;
-    font-family: Poppins;
-    font-weight: 400;
-    color: rgb(3, 85, 166);
-    -webkit-text-stroke: px #000;
-}
->>>>>>> JJ
 
 #header_nav > div > a{
     display: flex;
