@@ -70,19 +70,26 @@
 
 ?>
 
-<h1 class="page_infos">envoie ton message vers l'au-delà</h1>
-
-
 <div id="container_form">
+
     <form action="" method="post" class="post_form">
+    <h1 class="page_infos">envoie ton message vers l'au-delà</h1>
+    <br>
+    <br>
             <label class="label_title">Titre</label>
+            <br>
+            <div id="input_title">
             <input type="text" name="title" class="input_title"></input>
+            </div>
             <br>
             <label class="label_message">Message</label>
+            <br>
             <textarea type ="text" name="message" cols=50 rows=5></textarea>
             <br>
             <br>
+            <div id="send_button">
             <input type="submit" value="Publier" class="send_button"></input>
+            </div>
     </form>
 </div>
 </body>
