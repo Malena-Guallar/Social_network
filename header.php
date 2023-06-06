@@ -13,12 +13,11 @@
 <nav id = "header_nav">
     <div>
         <!-- <a href="index.php"><img id= "icon" src="assets/Icon_afterlife.png" alt="" /></a> -->
-        <a href="news.php">news</a>
+        <a href="news.php?user_id=<?php echo $logged_user ?>">news</a>
         <a href="posts.php?user_id=<?php echo $logged_user ?>">send</a>
     </div>
     <div class="app_name">
         <h1>AFTERLIFE</h1>
-
     </div>
     <div>
         <a href="login.php">Login</a>
