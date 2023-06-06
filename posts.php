@@ -36,23 +36,28 @@
     if ($logged_user) {
         if (isset($_POST['title']) && isset($_POST['message'])) {
             
-            $title = $_POST['title'];
-            $content = $_POST['message'];
-            $user_id = $_GET['user_id'];
+            if ($_POST['title'] != "" || $_POST['message'] != "")
+            {
+                $title = $_POST['title'];
+                $content = $_POST['message'];
+                $user_id = $_GET['user_id'];
 
-            $insertPost = 'INSERT INTO posts(post_id, user_id, content, created, title) VALUES (NULL, "'.$user_id.'", "'.$content.'", NOW(), "'.$title.'")';
-            $information = $bdd->query($insertPost);
-            
-            if (!$information){
-                echo "Message non publié";
+                $insertPost = 'INSERT INTO posts(post_id, user_id, content, created, title) VALUES (NULL, "'.$user_id.'", "'.$content.'", NOW(), "'.$title.'")';
+                $information = $bdd->query($insertPost);
+                
+                if (!$information){
+                    echo "Message non publié";
+                }
+                else {
+                    echo "Message publié, ";
+                    ?> <a href="news.php?user_id= <?php echo $logged_user ?>">Actus</a><?php 
+        
+                }
             }
-            else {
-                echo "Message publié, ";
-                ?> <a href="news.php?user_id= <?php echo $logged_user ?>">Actus</a><?php 
-    
+            else{
+                echo "Message or title is empty.";
             }
         }
-
     }
     else {
         echo "Veuillez vous connecter pour publier un message.";
