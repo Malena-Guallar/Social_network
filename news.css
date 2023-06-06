@@ -75,5 +75,12 @@ body {
     font-weight: 300;
     /* margin: 0 10px 10px 0; */
     border-radius: 3px;
-    padding: 5px;
+    /* padding: 5px; */
+    font-size: 150%;
+}
+
+#separator {
+    color: rgba(115, 171, 229);
+    font-size : 200%
+
 }
