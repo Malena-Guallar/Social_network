@@ -38,16 +38,20 @@
         foreach ($posts as $post){
             ?>
                 <div class="post_container">
-                    <div id="pseudo">
-                        <p>Posté par <?php echo $post['pseudo']?></p> <br/>
-                        <p><?php echo $post['created']?></p>
-                    </div>
-                    <div id="post">
+                <div id="post">
                         <div id="post_title">
-                            <p><?php echo $post['title']?></p>
+                            <p>❝  <?php echo $post['title']?>  ❞</p>
                         </div>
+                    <div id="pseudo">
+                        <p>Posté par <?php echo $post['pseudo']?> ~ <?php echo $post['created']?>  </p>
+                    </div>
+
                         <div id="post_content">
-                            <p><?php echo nl2br($post['content'])?></p>
+                            <p>«     <?php echo nl2br($post['content'])?>     »</p>
+                        </div>
+
+                        <div id="separator">
+                            <p>~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ </p>
                         </div>
                     </div>
                     

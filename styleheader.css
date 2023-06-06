@@ -28,7 +28,6 @@ body {
 }
 
 .app_infos {
-    position: fixed; 
     display: flex;
     position: relative;
     left: 575px;
