@@ -32,50 +32,68 @@ body {
 } 
 
 #container_form {
-    justify-content: left;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background: rgba(231, 239, 255, 0.5);
     width: 70%;
     padding: 2%;
-    border-radius: 7px;
+    border-radius: 40px;
+    color: #0035a7
 }
 
-.post_form {
-    position: relative;
-    align-content: left;
-    justify-content: left;
-    text-align: left;
+.page_infos {
+    color: #0035a7;
+    font-size: 200%;
 }
 
 .label_title {
-    display: left;
-    justify-content : left;
-    margin-right: 55px
-
+    display: flex;
+    justify-content: center;
 }
 
-.label_message {
-    display: left;
-    justify-content : left;
-    margin-right: 18px
-
-}
-
-input {
+#input_title {
+    display: flex;
+    justify-content: center;
     background-color: transparent;
-    border: solid black 0.5px;
-    font-family: Poppins;
-}
-
-textarea {
-    background-color: transparent;
-    border: solid black 0.5px;
-    font-family: Poppins;
+    font-family: Poppins;  
 }
 
 .input_title {
-    margin-bottom: 50px
+    background-color: transparent;
+    font-family: Poppins;
+    border: solid #0035a7 0.5px;
+    color: #0035a7;
+    border-radius: 7px;
+}
+
+.label_message {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+textarea {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border: solid #0035a7 0.5px;
+    font-family: Poppins;
+    color: #0035a7;
+    border-radius: 7px;
+}
+
+#send_button {
+    display:flex;
+    justify-content: center;
+
 }
 
 .send_button {
+    background-color: transparent;
+    color: #0035a7;
+    border: solid #0035a7 0.5px;
     margin-top:10%;
     padding: 5px 8px;
     border-radius: 3px;
@@ -84,7 +102,8 @@ textarea {
 }
 
 .send_button:hover{
-    background-color: blue;
+
+    background-color: rgba(115, 171, 229);
     color: white;
     border: white 1px solid;
 }
