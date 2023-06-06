@@ -5,6 +5,7 @@
 <?php 
     session_start() ;
     $logged_user = $_SESSION['logged_user'];
+    $logged_username = $_SESSION['logged_username'];
 ?>
 
 <style><?php
