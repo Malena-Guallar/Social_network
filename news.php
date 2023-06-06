@@ -67,8 +67,8 @@
 
     } else {
 
-        echo "Connectez-vous pour voir les messages"
-        ?> <a href="login.php">Login</a><?php 
+        ?> <p class="connect">Connectez-vous pour voir les messages</p>
+        <p class="connect"><a href="login.php">Login</a></p><?php 
 
     }
 
