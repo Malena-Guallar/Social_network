@@ -7,14 +7,12 @@ body {
 }
 
 #header_nav {
-    /* display: 3; */
     justify-content: space-between;
     font-weight: 500;
     font-style: italic; 
 }
 
 #header_nav > div{
-    /* display: flex; */
     align-items: center;
     margin-top: 0px;
 
@@ -40,15 +38,13 @@ body {
 }
 
 .app_connect {
-    /* display: flex; */
     text-align: right;
-    /* position: relative;
-    left: 875px; */
     top: 75px;
     font-size: medium;
     font-family: Poppins;
     font-weight: 400;
     color: rgb(3, 85, 166);
+    -webkit-text-stroke: px #000;
 }
 
 #header_nav > div > a{
@@ -58,7 +54,8 @@ body {
     padding-right: 20px;
     padding-left: 20px;
     transition-duration: 0.4s; 
-    font-size: 100%;  
+    font-size: 150%; 
+    -webkit-text-stroke: 0.25px #1100ff;
 }
 
 #header_nav > div > a:hover{
