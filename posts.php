@@ -64,7 +64,7 @@
 
 ?>
 
-<h1>envoie ton message vers l'au-delà</h1>
+<h1 class="page_infos">envoie ton message vers l'au-delà</h1>
 
 
 <div id="container_form">
