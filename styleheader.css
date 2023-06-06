@@ -6,11 +6,36 @@ body {
     font-family: Poppins;
 }
 
+.app_name {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-bottom: -90px;
+    margin-top : 20px;
+}
+
+.name {
+    font-family:Staatliches;
+    font-style:normal;
+    font-size: 500%;
+    color: rgba(115, 171, 229, 0.7)
+
+}
+
+.app_infos {
+    font-family: Poppins;
+    font-weight: 200;
+    color: rgba(59, 157, 255);
+    margin-bottom : -40px;
+}
+
+
 #header_nav {
     /* display: 3; */
     justify-content: space-between;
     font-weight: 500;
     font-style: italic; 
+    margin-bottom: 70px;
 }
 
 #header_nav > div{
@@ -20,22 +45,6 @@ body {
 
 }
 
-.app_name {
-    font-family:Staatliches;
-    font-style:normal;
-    font-size: 300%;
-    color: rgba(115, 171, 229, 0.7)
-}
-
-.app_infos {
-    display: flex;
-    position: relative;
-    left: 575px;
-    top: 75px; 
-    font-family: Poppins;
-    font-weight: 200;
-    color: rgba(59, 157, 255);
-}
 
 #header_nav > div > a{
     display: flex;

@@ -6,8 +6,9 @@
     include("styleheader.css");
 ?></style>
 
-<div>
-<p class="app_infos">a project by JJ, Malena & Maylis</p>
+<div class="app_name">
+    <p class="app_infos">a project by JJ, Malena & Maylis</p>
+        <h1 class="name">AFTERLIFE</h1>
 </div>
 
 <nav id = "header_nav">
@@ -16,9 +17,9 @@
         <a href="news.php?user_id=<?php echo $logged_user ?>">news</a>
         <a href="posts.php?user_id=<?php echo $logged_user ?>">send</a>
     </div>
-    <div class="app_name">
+    <!-- <div class="app_name">
         <h1>AFTERLIFE</h1>
-    </div>
+    </div> -->
     <div>
         <a href="login.php">Login</a>
     </li><a href="index.php">Sign Up</a>
