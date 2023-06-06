@@ -9,7 +9,7 @@
 <nav id = "header_nav">
     <div>
         <a href="index.php"><img id= "icon" src="assets/Icon_afterlife.png" alt="" /></a>
-        <a href="news.php">News</a>
+        <a href="news.php?user_id=<?php echo $logged_user ?>">News</a>
         <a href="posts.php?user_id=<?php echo $logged_user ?>">Posts</a>
     </div>
     <div>
