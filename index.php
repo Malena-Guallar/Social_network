@@ -20,21 +20,39 @@
 <?php
     if (isset($_POST["username"]) && isset($_POST["email"]) && isset($_POST["password"]))
     {
-        $username = $_POST["username"];
-        $email = $_POST["email"];
-        $password = $_POST["password"];
-
-        $insertUser = 'INSERT INTO users(id, pseudo, email, password) VALUES (NULL, "'.$username.'" , "'.$email.'" , "'.$password.'")';
-
-        $information = $bdd->query($insertUser);
-
-        if (!$information){
-            echo "Your account is false";
+        if ($_POST["username"] == "" || $_POST["email"] == "" || $_POST["password"] == ""){
+            echo "Empty fields";
         }
-        else {
-            echo "Your account is created, ";
-            ?> <a href="login.php">log here</a><?php 
+        else{
 
+            $email = $_POST["email"];
+            // Vérification si l'email existe déjà
+            $checkEmailQuery = 'SELECT email FROM users WHERE email = "'.$email.'"';
+            $checkEmailResult = $bdd->query($checkEmailQuery);
+            $emailCount = $checkEmailResult->fetchColumn();
+
+            $emailExists = false;
+            if ($_POST["email"] == $emailCount) {
+                $emailExists = true;
+                echo "Email is already used. Please use another email.";
+            }
+            else{
+                $username = $_POST["username"];
+                $email = $_POST["email"];
+                $password = $_POST["password"];
+
+                $insertUser = 'INSERT INTO users(id, pseudo, email, password) VALUES (NULL, "'.$username.'" , "'.$email.'" , "'.$password.'")';
+
+                $information = $bdd->query($insertUser);
+
+                if (!$information){
+                    echo "Your account is false";
+                }
+                else {
+                    echo "Your account is created, ";
+                    ?> <a href="login.php">log here</a><?php
+                }
+            }
         }
     }
 ?>
