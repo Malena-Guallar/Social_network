@@ -30,7 +30,7 @@
 
     if ($logged_user){
         
-        $searchPost = $bdd->prepare('SELECT posts.title, posts.user_id, posts.content, posts.created, users.pseudo FROM posts JOIN users ON users.id = posts.user_id') ;
+        $searchPost = $bdd->prepare('SELECT posts.title, posts.user_id, posts.content, posts.created, users.pseudo FROM posts JOIN users ON users.id = posts.user_id ORDER BY posts.created DESC') ;
         $searchPost->execute();
         $posts = $searchPost->fetchAll();
 
@@ -38,7 +38,7 @@
         foreach ($posts as $post){
             ?>
                 <div class="post_container">
-                <div id="post">
+                    <div id="post">
                         <div id="post_title">
                             <p>❝  <?php echo $post['title']?>  ❞</p>
                         </div>

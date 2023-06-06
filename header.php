@@ -21,7 +21,8 @@
 
     </div>
     <div>
-        <a href="login.php">login</a>
-    </li><a href="index.php">sign up</a>
+        <a href="login.php">Login</a>
+    </li><a href="index.php">Sign Up</a>
+    </li><a href="logout.php">Logout</a>
     </div>
 </nav>
