@@ -99,6 +99,7 @@ textarea {
     border-radius: 3px;
     font-family: Poppins;
     transition-duration: 0.4s;
+    margin-top: -7px;
 }
 
 .send_button:hover{
