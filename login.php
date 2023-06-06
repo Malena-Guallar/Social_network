@@ -4,6 +4,7 @@
 <?php 
     session_start() ;
     $logged_user = $_SESSION['logged_user'];
+    $logged_username = $_SESSION['logged_username'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,6 +41,7 @@
                 echo "Bonjour " . $user['pseudo'] .", bienvenue sur Afterlife" ;
 
                 $_SESSION['logged_user'] = $user['id'] ;
+                $_SESSION['logged_username'] = $user['pseudo'] ;
             } else {
                 $errorMessage = sprintf('mauvaises infos');
             }

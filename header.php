@@ -6,9 +6,13 @@
     include("styleheader.css");
 ?></style>
 
+<p class="app_connect"> Vous êtes connecté en tant que <?php echo $logged_username ?></p>
 <div>
-<p class="app_infos">a project by JJ, Malena & Maylis</p>
+<p class="app_infos">A project by JJ, Malena & Maylis</p>
 </div>
+
+
+
 
 <nav id = "header_nav">
     <div>

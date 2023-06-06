@@ -24,7 +24,8 @@ body {
     font-family:Staatliches;
     font-style:normal;
     font-size: 300%;
-    color: rgba(115, 171, 229, 0.7)
+    color: rgba(115, 171, 229, 0.7);
+    text-shadow: 0.1em 0.1em rgb(3, 39, 92);
 }
 
 .app_infos {
@@ -35,6 +36,19 @@ body {
     font-family: Poppins;
     font-weight: 200;
     color: rgba(59, 157, 255);
+    text-shadow: 0.05em 0.05em rgb(3, 66, 161);
+}
+
+.app_connect {
+    /* display: flex; */
+    text-align: right;
+    /* position: relative;
+    left: 875px; */
+    top: 75px;
+    font-size: medium;
+    font-family: Poppins;
+    font-weight: 400;
+    color: rgb(3, 85, 166);
 }
 
 #header_nav > div > a{

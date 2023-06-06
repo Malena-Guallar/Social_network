@@ -5,6 +5,7 @@
 <?php 
     session_start() ;
     $logged_user = $_SESSION['logged_user'];
+    $logged_username = $_SESSION['logged_username'];
 ?>
 
 
@@ -69,8 +70,7 @@
         ?> <p class="connect">Connectez-vous pour voir les messages</p>
         <p class="connect"><a href="login.php">Login</a></p><?php
     
-        ?> <p class="connect">Connectez-vous pour voir les messages</p>
-        <p class="connect"><a href="login.php">Login</a></p><?php
+        ?> <?php
 
     }
 
