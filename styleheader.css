@@ -55,9 +55,7 @@ body {
 }
 
 
-#message_form{
 
-}
 
 .form {
     position: relative;
@@ -84,15 +82,3 @@ body {
     border-radius: 3px;
     font-family: Poppins;
 }
-
-.post_container {
-    background: rgba(255, 255, 255, 0.7);
-    border: solid 1px black;
-    border-radius: 5px;
-    margin: auto;
-    display: flex;
-    width: 55%;
-    
-
-}
-
