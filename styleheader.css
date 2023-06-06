@@ -12,6 +12,7 @@ body {
     align-items: center;
     margin-bottom: -90px;
     margin-top : 20px;
+    text-shadow: 2px 2px 4px rgba(1, 87, 109, 1);
 }
 
 .name {
@@ -24,9 +25,18 @@ body {
 
 .app_infos {
     font-family: Poppins;
-    font-weight: 200;
+    font-weight: bold;
     color: rgba(59, 157, 255);
     margin-bottom : -40px;
+}
+
+.app_connect {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgba(59, 157, 255);
+    margin-bottom : -40px;
+    -webkit-text-stroke: 0.75px #ffffff;
 }
 
 

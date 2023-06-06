@@ -6,6 +6,8 @@
     include("styleheader.css");
 ?></style>
 
+<p class="app_connect">Connecté en tant que <?php echo $logged_username ?></p>
+
 <div class="app_name">
     <p class="app_infos">a project by JJ, Malena & Maylis</p>
         <h1 class="name">AFTERLIFE</h1>
