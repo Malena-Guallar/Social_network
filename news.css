@@ -90,11 +90,14 @@ body {
 
 #api > h2 {
     position: relative;
+    color: #0035a7;
 }
 
 #diedPerson {
     overflow: scroll;
     margin-top : -10px;
+    color: rgba(115, 171, 229);
+
 }
 
 #megaDiv {
