@@ -68,3 +68,12 @@ body {
     font-family: Poppins;
 }
 
+.welcome_message {
+
+    display: flex;
+    justify-content: center;
+    color: #0060df;
+    font-size: 200%;
+    text-shadow:  0.05em 0.05em #558ABB;
+
+}

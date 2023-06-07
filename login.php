@@ -38,8 +38,9 @@
                 $user['email'] == $email &&
                 $user['password'] == $password
             ) {
-                echo "Bonjour " . $user['pseudo'] .", bienvenue sur Afterlife" ;
-
+                ?> 
+                <p class="welcome_message">Bonjour <?php echo $user['pseudo']; ?>, bienvenue sur Afterlife</p>
+                <?php
                 $_SESSION['logged_user'] = $user['id'] ;
                 $_SESSION['logged_username'] = $user['pseudo'] ;
             } else {
