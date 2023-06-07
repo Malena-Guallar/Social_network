@@ -26,53 +26,57 @@
         include_once("header.php");
     ?>
 </header>
-        
-        <?php
-    if ($logged_user && $logged_username) {
-    
-        $searchPost = $bdd->prepare('SELECT posts.title, posts.user_id, posts.content, posts.created, users.pseudo FROM posts JOIN users ON users.id = posts.user_id ORDER BY posts.created DESC') ;
-        $searchPost->execute();
-        $posts = $searchPost->fetchAll();
+    <div id = "megaDiv">
+        <div id="divPosts">
+                <?php
+            if ($logged_user && $logged_username) {
+            
+                $searchPost = $bdd->prepare('SELECT posts.title, posts.user_id, posts.content, posts.created, users.pseudo FROM posts JOIN users ON users.id = posts.user_id ORDER BY posts.created DESC') ;
+                $searchPost->execute();
+                $posts = $searchPost->fetchAll();
 
 
-        foreach ($posts as $post){
-            ?>
-                <div class="post_container">
-                    <div id="post">
-                        <div id="post_title">
-                            <p>❝  <?php echo $post['title']?>  ❞</p>
+                foreach ($posts as $post){
+                    ?>
+                        <div class="post_container">
+                            <div id="post">
+                                <div id="post_title">
+                                    <p>❝  <?php echo $post['title']?>  ❞</p>
+                                </div>
+                            <div id="pseudo">
+                                <p>Posté par <?php echo $post['pseudo']?> ~ <?php echo $post['created']?>  </p>
+                            </div>
+
+                                <div id="post_content">
+                                    <p>«     <?php echo nl2br($post['content'])?>     »</p>
+                                </div>
+
+                                <div id="separator">
+                                    <p>~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ </p>
+                                </div>
+                            </div>
+                            
                         </div>
-                    <div id="pseudo">
-                        <p>Posté par <?php echo $post['pseudo']?> ~ <?php echo $post['created']?>  </p>
-                    </div>
 
-                        <div id="post_content">
-                            <p>«     <?php echo nl2br($post['content'])?>     »</p>
-                        </div>
+                    <?php
+                }
+                ?>
+                <?php
 
-                        <div id="separator">
-                            <p>~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ </p>
-                        </div>
-                    </div>
-                    
-                </div>
+            } else if (!$logged_user){
+                ?>
+                <p class="connect">Connectez-vous pour voir les messages</p>    
+                <p class="connect"><a href="login.php">Login</a></p>
 
-            <?php
-        }
+                <?php
+
+
+            }
+
         ?>
-         <?php
+        </div>
+            <?php include('api.php') ?>
 
-    } else if (!$logged_user){
-        ?>
-        <p class="connect">Connectez-vous pour voir les messages</p>    
-        <p class="connect"><a href="login.php">Login</a></p>
+    </div>    
 
-        <?php
-
-
-    }
-
-?>
-
-
-        
+</body>

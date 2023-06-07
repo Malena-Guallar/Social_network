@@ -34,15 +34,11 @@ body {
 
 .post_container {
     background: rgba(231, 239, 255, 0.5);
-    /* display: flex; */
     flex-direction: row;
     position: relative; 
-    /* border: rgba(115, 171, 229, 0.3) 5px solid; */
     border-radius: 40px;
-    /* margin: 10px auto; */
-    width: 55%;
+    /* width: 100%; */
     height: auto;
-    margin-left: 100px;
     margin-bottom: 50px; 
 }
 
@@ -63,19 +59,15 @@ body {
 
 #post_title {
     font-family: Staatliches;
-    /* font-weight: 400; */
     font-size: 200%;
     color: rgba(115, 171, 229);
     margin-bottom: -30px;
 }
 
 #post_content {
-    /* background: rgba(115, 171, 229, 0.2); */
     color: #0035a7;
     font-weight: 300;
-    /* margin: 0 10px 10px 0; */
     border-radius: 3px;
-    /* padding: 5px; */
     font-size: 150%;
 }
 
@@ -84,3 +76,36 @@ body {
     font-size : 200%
 
 }
+
+#api {
+    display: flex;
+    flex-direction: column;
+    background: rgba(231, 239, 255, 0.5);
+    border-radius: 40px;
+    padding: 5px 30px;
+    height: 300px;
+    flex-grow: 1;
+    
+}
+
+#api > h2 {
+    position: relative;
+}
+
+#diedPerson {
+    overflow: scroll;
+    margin-top : -10px;
+}
+
+#megaDiv {
+    display: flex;
+    padding: 64px;
+}
+
+#divPosts {
+    flex-direction: column;
+    flex-grow: 3;
+    margin-right: 400px;
+    
+}
+
