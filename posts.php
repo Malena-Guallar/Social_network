@@ -47,11 +47,11 @@
                 $information = $bdd->query($insertPost);
                 
                 if (!$information){
-                    echo "Message non publié";
+                    echo "Message not sent";
                 }
                 else {
-                    echo "Message publié, ";
-                    ?> <a href="news.php?user_id= <?php echo $logged_user ?>">Actus</a><?php 
+                    echo "Message sent";
+                    ?> <a href="news.php?user_id= <?php echo $logged_user ?>">News</a><?php 
         
                 }
             }
@@ -61,7 +61,7 @@
         }
     }
     else {
-        echo "Veuillez vous connecter pour publier un message.";
+        echo "Please log in to send a message";
         ?><a href='login.php'>Log in</a><?php
 
     }
@@ -73,10 +73,10 @@
 <div id="container_form">
 
     <form action="" method="post" class="post_form">
-    <h1 class="page_infos">envoie ton message vers l'au-delà</h1>
+    <h1 class="page_infos">send your message beyond</h1>
     <br>
     <br>
-            <label class="label_title">Titre</label>
+            <label class="label_title">Title</label>
             <br>
             <div id="input_title">
             <input type="text" name="title" class="input_title"></input>
@@ -88,7 +88,7 @@
             <br>
             <br>
             <div id="send_button">
-            <input type="submit" value="Publier" class="send_button"></input>
+            <input type="submit" value="Send" class="send_button"></input>
             </div>
     </form>
 </div>

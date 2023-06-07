@@ -44,7 +44,7 @@
                                     <p>❝  <?php echo $post['title']?>  ❞</p>
                                 </div>
                             <div id="pseudo">
-                                <p>Posté par <?php echo $post['pseudo']?> ~ <?php echo $post['created']?>  </p>
+                                <p>Posted by <?php echo $post['pseudo']?> ~ <?php echo $post['created']?>  </p>
                             </div>
 
                                 <div id="post_content">
@@ -65,7 +65,7 @@
 
             } else if (!$logged_user){
                 ?>
-                <p class="connect">Connectez-vous pour voir les messages</p>    
+                <p class="connect">Login to see messages</p>    
                 <p class="connect"><a href="login.php">Login</a></p>
 
                 <?php

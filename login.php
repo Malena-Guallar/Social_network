@@ -1,5 +1,6 @@
 <style><?php
     include("index.css");
+    include("styleLogin.css");
 ?></style>
 <?php 
     session_start() ;
@@ -39,7 +40,7 @@
                 $user['password'] == $password
             ) {
                 ?> 
-                <p class="welcome_message">Bonjour <?php echo $user['pseudo']; ?>, bienvenue sur Afterlife</p>
+                <p class="welcome_message">Hello <?php echo $user['pseudo']; ?>, welcome to Afterlife</p>
                 <?php
                 $_SESSION['logged_user'] = $user['id'] ;
                 $_SESSION['logged_username'] = $user['pseudo'] ;
@@ -53,11 +54,14 @@
 ?>
 
 <div class="subscription_form">
-    <form class="form" method="post">
+    <form class="form" method="post" action="news.php">
         <label>Email</label>
-        <input type='email' name='email'></input>
+        <br>
+        <input class='input' type='email' name='email'></input>
         <label>Password</label>
-        <input type="password" name="password"></input>
-        <input type="submit" value="Se connecter"></input>
+        <br>
+        <input class="input" type="password" name="password"></input>
+        <br>
+        <input id="loginButton" type="submit" value="Log In"></input>
     </form>
 </div>

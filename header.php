@@ -35,7 +35,7 @@
         ?> 
         
         <div class="user_name">
-        <p class="app_connect">Connecté.e en tant que <?php echo $logged_username ?></p>
+        <p class="app_connect">Connected as <?php echo $logged_username ?></p>
         </div>
         
         <?php

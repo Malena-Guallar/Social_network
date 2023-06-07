@@ -62,10 +62,24 @@ body {
 
 }
 
+
+
 .bouton {
+    justify-content: center;
+    background-color: transparent;
+    border: solid black 0.5px;
+    margin-top:20px;
     padding: 5px 8px;
     border-radius: 3px;
     font-family: Poppins;
+    transition-duration: 0.4s;
+}
+
+.bouton:hover{
+
+    background-color: rgba(115, 171, 229);
+    color: white;
+    border: white 1px solid;
 }
 
 .welcome_message {

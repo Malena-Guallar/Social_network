@@ -74,7 +74,7 @@
         <label>Password</label>
         <input type="password" name = "password">
         <br>
-        <input class="bouton" type="submit" value="Créer un compte">
+        <input class="bouton" type="submit" value="Create account">
     </form>
 </div>
 <footer>

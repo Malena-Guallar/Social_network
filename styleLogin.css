@@ -36,13 +36,9 @@ body {
     background: rgba(255, 255, 255, 0.7);
     width: 35%;
     margin: auto;
-    margin-top: 10%;
     border-radius: 7px;
+
 }
-
-
-
-
 
 .form {
     position: relative;
@@ -50,13 +46,14 @@ body {
     justify-content: center;
     padding: 30px;
     text-align: center;
+
 }
 
 .form > label {
     padding: 5%;
 }
 
-.form > input {
+.input {
     margin: 5%;
     background-color: transparent;
     border: solid black 0.5px;
@@ -64,8 +61,20 @@ body {
 
 }
 
-.bouton {
+#loginButton {
+    justify-content: center;
+    background-color: transparent;
+    border: solid black 0.5px;
+    margin-top:20px;
     padding: 5px 8px;
     border-radius: 3px;
     font-family: Poppins;
+    transition-duration: 0.4s;
+}
+
+#loginButton:hover{
+
+    background-color: rgba(115, 171, 229);
+    color: white;
+    border: white 1px solid;
 }
