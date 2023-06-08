@@ -54,7 +54,7 @@
 ?>
 
 <div class="subscription_form">
-    <form class="form" method="post" action="news.php">
+    <form class="form" method="post" action="">
         <label>Email</label>
         <br>
         <input class='input' type='email' name='email'></input>
