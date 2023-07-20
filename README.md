@@ -1,3 +1,3 @@
 # Social_network
 
-group projetc
+group project
